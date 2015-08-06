@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "afr.iterson"
+        minSdkVersion 21
+        targetSdkVersion 22
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':recyclerview')
+    compile 'com.google.code.gson:gson:2.3.1'
+   //compile 'com.android.support:appcompat-v7:+'
+    compile files('libs/commons-lang3-3.1.jar')
+    compile files('libs/retrofit-1.9.0.jar')
+    compile 'com.android.support:recyclerview-v7:+'
+
+}

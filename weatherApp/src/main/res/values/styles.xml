@@ -1,0 +1,63 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    
+<style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">@color/Coral</item>
+    <item name="colorPrimaryDark">@color/Aqua</item>
+    <item name="colorAccent">@color/DarkMagenta</item>
+    </style>
+
+    <!-- Application theme. -->
+
+<style name="MyMaterialTheme.Base" parent="android:Theme.Material"/>
+
+    <style name="startpage_text" parent="@android:TextAppearance">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/Black</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="startpage_text_large" parent="@android:TextAppearance">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/Black</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="startpage_text_small" parent="@android:TextAppearance">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/Black</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="NoActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

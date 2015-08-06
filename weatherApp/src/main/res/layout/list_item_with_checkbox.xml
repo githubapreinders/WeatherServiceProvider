@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_listitem_checkbox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:cacheColorHint="#00000000"
+    android:orientation="horizontal"
+    android:background="@drawable/bground2"
+    android:descendantFocusability="blocksDescendants" 
+    android:paddingLeft="10dp">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:cacheColorHint="#00000000"
+        android:paddingLeft="10dp"
+        
+        />
+    <TextView
+        android:id="@+id/listitem_property"
+        android:layout_width="wrap_content"
+		android:cacheColorHint="#00000000"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_weight="1"
+        android:text="Gouda"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+     <TextView
+        android:id="@+id/listitem_country"
+        android:layout_width="wrap_content"
+		android:cacheColorHint="#00000000"
+        android:layout_height="wrap_content"
+        android:text="Netherlands"
+        android:layout_gravity="bottom|right"
+        android:paddingRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+</LinearLayout>
